@@ -451,11 +451,8 @@ int main(int argc, char* argv[]) {
     long long checks = stoll(line);
 
     for (int i = 0; i < checks; ++i) {
-        //std::cout << "\rDone" << i << "checks out of" << checks << std::flush;
-
         check_transaction(data_in_file, data_out_file, max_time);
     }
-    //std::cout << "\rFinished                         " << std::endl;
     data_in_file.close();
     data_out_file.close();
 }
